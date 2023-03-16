@@ -1,4 +1,4 @@
-#include <studio.h>
+#include<studio.h>
 /**
 *main - entry point
 *return: always 0 (success)
