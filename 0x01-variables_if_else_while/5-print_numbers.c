@@ -10,6 +10,6 @@ for (k = 0; k < 10; k++)
 {
 printf("%d", k);
 }
-printf('\n');
+putchar('\n');
 return (0);
 }
