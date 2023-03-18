@@ -18,7 +18,7 @@ if (k > a && a > s)
 putchar(k);
 putchar(a);
 putchar(s);
-if (k != 55 || a != 56)
+if (a != 55 || s != 56)
 {
 putchar(',');
 putchar(' ');
