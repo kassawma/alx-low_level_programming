@@ -17,11 +17,12 @@ else if (i == 98)
 printf("%d\n", i);
 }}
 else if (n >= 98)
+{
 for (j = n; n >= 98; j--)
 {
 if (j != 98)
 printf("%d, ", i);
-else if (j != 98)
-printf("%d\n", i);
+else if (j == 98)
+printf("%d\n", j);
 }
 }
