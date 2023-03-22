@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include "main.h"
 /**
-*print_to_98 - print n to 98 natural number 
-* 
+*print_to_98 - print n to 98 natural numbe
+* @n: the n number
 */
 void print_to_98(int n)
 {
@@ -18,6 +18,7 @@ printf("%d\n", i);
 }}
 else if (n >= 98)
 {
+
 for (j = n; n >= 98; j--)
 {
 if (j != 98)
