@@ -14,10 +14,10 @@ while (*(src + 1) != '\0')
 {
 l++;
 }
-for (x = 0; x < l; x++)
+for ( ; x < l; x++)
 {
 dest[x] = src[x];
 }
-dest[1] = '\0';
+dest[x] = '\0';
 return (dest);
 }
