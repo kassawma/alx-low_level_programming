@@ -18,6 +18,6 @@ for (x = 0; x < l; x++)
 {
 dest[x] = src[x];
 }
-dest[l] = '\0';
+dest[1] = '\0';
 return (dest);
 }
