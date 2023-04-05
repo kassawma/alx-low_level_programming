@@ -1,15 +1,16 @@
 #include "main.h"
 /**
-* _pow_recursion - power recursion
-* @x: rasie
-* @y: power
-* Return: return the power
+* _strlen_recursion - string length
+* @s: string
+*Return: the length of string
 */
-int _pow_recursion(int x, int y)
+int _strlen_recursion(char *s)
 {
-if (n < 0)
-return (-1);
-if (n == 0)
-return (1);
-return (x * factorial(x, y - 1));
+int i = 0;
+if (*s)
+{
+i++;
+i += _strlen_recursion(s + 1);
+}
+return (i);
 }
