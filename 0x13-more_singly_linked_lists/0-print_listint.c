@@ -1,8 +1,21 @@
-int sum_listint(listint_t *head);
-listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n);
-int delete_nodeint_at_index(listint_t **head, unsigned int index);
-listint_t *reverse_listint(listint_t **head);
-size_t print_listint_safe(const listint_t *head);
-size_t free_listint_safe(listint_t **h);
-listint_t *find_listint_loop(listint_t *head);
-#endif
+#include "lists.h"
+
+/**
+ * print_listint - prints all the elements of a listint_t list.
+ * @h: pointer to the list.
+ * Return: number of nodes.
+ **/
+size_t print_listint(const listint_t *h)
+{
+	const listint_t *node = h;
+	size_t cont = 0;
+
+	while (node)
+	{
+		printf("%i\n", node->n);
+		cont++;
+		node = node->next;
+	}
+
+	return (cont);
+}
